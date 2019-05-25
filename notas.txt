@@ -15,6 +15,13 @@ df_v	copia de df
 		S_VISA_MASTER_MLIMITECOMPRA	-4,4 Suma de limites de tarjetas
 		C_VISA_MATER_SALDO_LIM		3,0 Cociente entre suma de saldos y suma de limites de tarjetas
 
+	sugerencias
+		suma de tconsumos
+		suma mconsumototal
+		suma tconsumos
+		cociente master saldo lim
+		problemas en cuentas
+
 df_v_corr	tabla de correlaciones de df_v
 		le sacamos CLASE_NUM y CLASE
 		la ordenamos
