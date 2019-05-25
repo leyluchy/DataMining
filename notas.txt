@@ -1,0 +1,51 @@
+Variables:
+dataset_entrenamiento	string 	nombre del data set
+df	dataset entrenamiento
+	le agregamos CLASE_NUM con 0 para continuna, 1 para baja
+dfd	tabla de correlaciones de df
+	ahora mismo nunca se crea, esta comentada
+
+df_v	copia de df
+	le agregamos nuestras variables
+		0 para nulos e infinitos
+		C_VISA_SALDO_LIM	3,7 Cociente entre el saldo de la tarjeta y el limite, para saber qué % del límite que tiene está usando.
+		S_VISA_MASTER_SALDO	-1,4 Suma del saldo en ambas tarjetas
+		N_T_DEUDAS		-17,8 Variable conceptual del negocio para indicar si el cliente tiene alguna deuda con el banco.
+		G_VISA_MASTER_MARCA_ATRASO	23,0 Si tiene atraso en alguna tarjeta
+		S_VISA_MASTER_MLIMITECOMPRA	-4,4 Suma de limites de tarjetas
+		C_VISA_MATER_SALDO_LIM		3,0 Cociente entre suma de saldos y suma de limites de tarjetas
+
+df_v_corr	tabla de correlaciones de df_v
+		le sacamos CLASE_NUM y CLASE
+		la ordenamos
+
+Variables con alta correlacion (las que no pongo, tienen menos de 1%):
+TTARJETA_VISA			-27.699732
+VISA_MARCA_ATRASO		23.414824
+G_VISA_MASTER_MARCA_ATRASO	23.098236
+MASTER_MARCA_ATRASO		18.736716
+N_T_DEUDAS			-17.861484
+CTARJETA_VISA_TRANSACCIONES	-14.088264
+VISA_TCONSUMOS			-12.309743
+MAUTOSERVICIO			-10.073094
+CCAJEROS_PROPIO_TRANSACCIONES	-9.344578
+CLIENTE_ANTIGUEDAD		-8.834424
+VISA_MCONSUMOTOTAL		-8.804719
+VISA_MLIMITECOMPRA		-8.129148
+MASTER_MLIMITECOMPRA		-7.980711
+MPASIVOS_MARGEN			-7.160841
+CCAJEROS_AJENOS_TRANSACCIONES	-7.158164
+MASTER_TCONSUMOS		-5.898305
+MCUENTAS_SALDO			-5.344032
+MACTIVOS_MARGEN			5.339453
+MPLAN_SUELDO			-4.529926
+S_VISA_MASTER_MLIMITECOMPRA	-4.447921
+MASTER_MCONSUMOTOTAL		-4.233593
+MPAGOMISCUENTAS			-3.711787
+C_VISA_MATER_SALDO_LIM		3.717811
+C_VISA_SALDO_LIM		3.075686
+VISA_MSALDOTOTAL		-2.490743
+CPRESTAMOS_HIPOTECARIOS		-2.268247
+MRENTABILIDAD			-2.108100
+MASTER_MSALDOTOTAL		1.760801
+S_VISA_MASTER_SALDO		-1.482737
