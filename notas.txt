@@ -18,7 +18,6 @@ df_v	copia de df
 	sugerencias
 		suma de tconsumos
 		suma mconsumototal
-		suma tconsumos
 		cociente master saldo lim
 		problemas en cuentas
 
