@@ -1,39 +1,81 @@
 GANANCIA MÍNIMA: 4904830.271
+
 PARÁMETROS: MD=6, MF=20, MLN=500, MSL=1000, MSS=2000
 
+
+
 ###################### EJECUCIÓN 1 ######################
+
 GANANCIA: 5452832.32353086
+
 PARAMETROS = {'max_depth':[8, 10, 12],
-              'max_features':[10, 12, 20],
-              'max_leaf_nodes':[300],
-              'min_samples_leaf':[125, 250],
-              'min_samples_split':[500, 1000]}
+              
+		'max_features':[10, 12, 20],
+              
+		'max_leaf_nodes':[300],
+              
+		'min_samples_leaf':[125, 250],
+
+		'min_samples_split':[500, 1000]}
+
+
 
 MATRIZ DE CONFUSIÓN
+
  	pred_0 	pred_1
+
 0 	17368 	69
+
 1 	644 	190
 
+
+
 ###################### EJECUCIÓN 2 ######################
+
 GANANCIA: 
+
 PARAMETROS
 
+
+
 MATRIZ DE CONFUSIÓN
+
+
 
 ###################### EJECUCIÓN 3 ######################
+
 GANANCIA: 
+
 PARAMETROS
 
+
+
 MATRIZ DE CONFUSIÓN
+
+
+
 
 ###################### EJECUCIÓN 4 ######################
+
 GANANCIA: 
+
 PARAMETROS
 
+
+
 MATRIZ DE CONFUSIÓN
+
+
+
 
 ###################### EJECUCIÓN 5 ######################
+
 GANANCIA: 
+
 PARAMETROS
 
+
+
 MATRIZ DE CONFUSIÓN
+
+
