@@ -133,8 +133,40 @@ MATRIZ DE CONFUSIÓN
 1	607	227
 
 Conclusiones de los graficos:
-'max_depth':[6, 10, 12, 14, 16] El mejor eligio 10. Pero ahora el grafico muestra algo totalmente decreciente.
-'max_features':[10, 20, 30, 50] El mejor eligio 20. Hay un pico hacia abajo en 20.
-'max_leaf_nodes':[50, 100, 250, 500] El mejor eligio 50. Hay un pico muy claro en 100.
-'min_samples_leaf':[70, 125, 1000, 2000] Constante. El mejor eligio de vuelta 125.
-'min_samples_split':[100, 250, 300, 500] El mejor eligio 100. El grafico es creciente.
+'max_depth':[6, 10, 12, 14, 16] El mejor eligio 10. Pero ahora el grafico muestra algo totalmente decreciente. Voy a probar algo mas entre 6 y 10.
+'max_features':[10, 20, 30, 50] El mejor eligio 20. Hay un pico hacia abajo en 20. Lo voy a dejar asi.
+'max_leaf_nodes':[50, 100, 250, 500] El mejor eligio 50. Hay un pico muy claro en 100. Voy a agregar 25 y sacar 500.
+'min_samples_leaf':[70, 125, 1000, 2000] Constante. El mejor eligio de vuelta 125. Lo voy a clavar en 125.
+'min_samples_split':[100, 250, 300, 500] El mejor eligio 100. El grafico es creciente. Voy a probar valores menores.
+
+
+
+###################### EJECUCIÓN 6 ######################
+
+Comentario: basado en conclusiones de la ejecucion 6. 2880 fits en 6.5min
+GANANCIA: 5491496.699669967
+PARAMETROS = {'max_depth':[6, 8, 10, 12, 14], 
+              'max_features':[10, 20, 30, 50], 
+              'max_leaf_nodes':[25, 50, 100, 250], 
+              'min_samples_leaf':[50, 125, 500],
+              'min_samples_split':[25, 60, 100, 250]}
+
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=8,
+            max_features=20, max_leaf_nodes=100, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=50,
+            min_samples_split=250, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=1, splitter='best')
+
+
+
+MATRIZ DE CONFUSIÓN
+pred_0	pred_1
+0	17366	71
+1	612	222
+
+Conclusiones de los graficos:
+'max_depth':[6, 8, 10, 12, 14] El mejor eligio 8. Grafico decreciente. Ejec 5 habia elegido 10 y ejec 4 12. Voy a poner mas valores cerca de 8.
+'max_features':[10, 20, 30, 50] El mejor eligio 20. Hay un pico positivo en 20 y negativo en 30. Este grafico es totalmente diferente en cada ejecucion, pero en todas se viene eligiendo 20. Lo voy a clavar en 20.
+'max_leaf_nodes':[25, 50, 100, 250] El mejor eligio 100. Sigue el pico en 100. Lo voy a dejar asi.
+'min_samples_leaf':[50, 125, 500] El mejor eligio 50. El grafico sigue siendo constante pero antes elegia 125. Voya a seguir probando.
+'min_samples_split':[25, 60, 100, 250] El mejor eligio 250. El grafico es creciente. Ejec5 eligio 100 y ejec4 250. Voy a seguir probando.
