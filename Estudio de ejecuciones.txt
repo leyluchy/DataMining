@@ -99,6 +99,13 @@ MATRIZ DE CONFUSIÓN
 0	17349	88
 1	607	227
 
+Conclusiones de los graficos:
+'max_depth':[6, 12, 16, 24] Hay un pico muy marcado en 12. Voy a poner mas opciones entre 6 y 16.
+'max_features':[5, 10, 20, 30] Creciente pero cada vez menos. Voy a probar poner mas de 30.
+'max_leaf_nodes':[25, 50, 100, 500] Crece mucho hasta 100 y baja un poco en 500. Voy a poner mas opciones entre 100 y 500.
+'min_samples_leaf':[125, 250, 500, 1000] Literalmente constante. Voy a probar valores menores de 125 y mayores de 1000, aunque dudo que sirva.
+'min_samples_split':[250, 500, 1000, 2000] Pico claro en 500. Voy a probar mas valores entre 250 y 1000.
+
 
 
 
