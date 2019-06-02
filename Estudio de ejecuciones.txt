@@ -101,22 +101,40 @@ MATRIZ DE CONFUSIÓN
 
 Conclusiones de los graficos:
 'max_depth':[6, 12, 16, 24] Hay un pico muy marcado en 12. Voy a poner mas opciones entre 6 y 16.
-'max_features':[5, 10, 20, 30] Creciente pero cada vez menos. Voy a probar poner mas de 30.
-'max_leaf_nodes':[25, 50, 100, 500] Crece mucho hasta 100 y baja un poco en 500. Voy a poner mas opciones entre 100 y 500.
-'min_samples_leaf':[125, 250, 500, 1000] Literalmente constante. Voy a probar valores menores de 125 y mayores de 1000, aunque dudo que sirva.
-'min_samples_split':[250, 500, 1000, 2000] Pico claro en 500. Voy a probar mas valores entre 250 y 1000.
+'max_features':[5, 10, 20, 30] Creciente pero cada vez menos, el mejor dio 20. Voy a probar poner mas de 30.
+'max_leaf_nodes':[25, 50, 100, 500] Crece mucho hasta 100 y baja un poco en 500. El mejor dio 50. Voy a poner mas opciones entre 100 y 500.
+'min_samples_leaf':[125, 250, 500, 1000] Literalmente constante. El mejor dio 125. Voy a probar valores menores de 125 y mayores de 1000, aunque dudo que sirva.
+'min_samples_split':[250, 500, 1000, 2000] Pico claro en 500. El mejor dio 250. Voy a probar mas valores entre 250 y 1000.
 
 
 
 
 ###################### EJECUCIÓN 5 ######################
 
-GANANCIA: 
+Comentario: basado en conclusiones de la ejecucion 4. 3840 fits en 8.7min (4 jobs)
+GANANCIA: 5484664.499285749
+PARAMETROS = {'max_depth':[6, 10, 12, 14, 16], 
+              'max_features':[10, 20, 30, 50], 
+              'max_leaf_nodes':[50, 100, 250, 500], 
+              'min_samples_leaf':[70, 125, 1000, 2000],
+              'min_samples_split':[100, 250, 300, 500]}
 
-PARAMETROS
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=10,
+            max_features=20, max_leaf_nodes=50, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=125,
+            min_samples_split=100, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=1, splitter='best')
 
 
 
 MATRIZ DE CONFUSIÓN
+	pred_0	pred_1
+0	17349	88
+1	607	227
 
-
+Conclusiones de los graficos:
+'max_depth':[6, 10, 12, 14, 16] El mejor eligio 10. Pero ahora el grafico muestra algo totalmente decreciente.
+'max_features':[10, 20, 30, 50] El mejor eligio 20. Hay un pico hacia abajo en 20.
+'max_leaf_nodes':[50, 100, 250, 500] El mejor eligio 50. Hay un pico muy claro en 100.
+'min_samples_leaf':[70, 125, 1000, 2000] Constante. El mejor eligio de vuelta 125.
+'min_samples_split':[100, 250, 300, 500] El mejor eligio 100. El grafico es creciente.
