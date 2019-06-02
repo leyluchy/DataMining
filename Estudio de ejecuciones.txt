@@ -32,21 +32,42 @@ MATRIZ DE CONFUSIÓN
 
 ###################### EJECUCIÓN 2 ######################
 
-GANANCIA: 
+GANANCIA: 5452832.32353086
+PARAMETROS = {'max_depth':[8, 12],
+              'max_features':[12, 14, 20],
+              'max_leaf_nodes':[50, 75],
+              'min_samples_leaf':[125],
+              'min_samples_split':[980, 1000]}
 
-PARAMETROS
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=8,
+            max_features=20, max_leaf_nodes=50, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=125,
+            min_samples_split=980, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=1, splitter='best')
 
 
 
 MATRIZ DE CONFUSIÓN
-
+	pred_0	pred_1
+0	17368	69
+1	644	190
 
 
 ###################### EJECUCIÓN 3 ######################
 
-GANANCIA: 
+Comentario: los parametros del archivo subido a drive
+GANANCIA: 4965832.463097056
+PARAMETROS = {'max_depth':[6, 12],
+              'max_features':[5, 20], 
+              'max_leaf_nodes':[500], 
+              'min_samples_leaf':[1000],
+              'min_samples_split':[2000]}
 
-PARAMETROS
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=6,
+            max_features=20, max_leaf_nodes=500, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=1000,
+            min_samples_split=2000, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=1, splitter='best')
 
 
 
@@ -57,13 +78,26 @@ MATRIZ DE CONFUSIÓN
 
 ###################### EJECUCIÓN 4 ######################
 
-GANANCIA: 
+Comentario: los parametros del archivo que paso el profe por pendrive en clase. Tarda mucho, 10.4min, son 3072 fits.
+GANANCIA: 5478495.533881746
+PARAMETROS = {'max_depth':[6, 12, 16, 24], 
+              'max_features':[5, 10, 20, 30], 
+              'max_leaf_nodes':[25, 50, 100, 500], 
+              'min_samples_leaf':[125, 250, 500, 1000],
+              'min_samples_split':[250, 500, 1000, 2000]}
 
-PARAMETROS
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=12,
+            max_features=20, max_leaf_nodes=50, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=125,
+            min_samples_split=250, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=1, splitter='best')
 
 
 
 MATRIZ DE CONFUSIÓN
+	pred_0	pred_1
+0	17349	88
+1	607	227
 
 
 
