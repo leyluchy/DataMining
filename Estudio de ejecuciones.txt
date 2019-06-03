@@ -143,7 +143,7 @@ Conclusiones de los graficos:
 
 ###################### EJECUCIÓN 6 ######################
 
-Comentario: basado en conclusiones de la ejecucion 6. 2880 fits en 6.5min
+Comentario: basado en conclusiones de la ejecucion 5. 2880 fits en 6.5min
 GANANCIA: 5491496.699669967
 PARAMETROS = {'max_depth':[6, 8, 10, 12, 14], 
               'max_features':[10, 20, 30, 50], 
